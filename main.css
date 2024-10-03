@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Fontsgoole para buscar o tipo de fonte que você quer usar. Uma opção para títulos e menu, outra para letras normais*/
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Montserrat', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+section h3 {
+    font-weight: bold;
+    font-size: medium;
+    margin-bottom: 16px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*Verde Escuro (#4CAF50)
+
+Marrom (#8B4513)
+
+Amarelo (#FFD700)
+
+Bege (#F5F5DC)
+
+Azul Claro (#87CEEB)*/
+header {
+    padding: 16px;
+    background-color: #7f4923;
+    color: #ffe44d;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 16px;
+}
+
+header nav li a {
+    color: #ffe44d;
+    text-decoration: none;
+}
+/*Dessa forma, apesar de ocupar 100% da largura, o limite máximo é de 1280px, após isso ele não usa mais nada e fica centralizado, evitando cansaço para leitura.*/
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container,
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store-front {
+    height: 380px;
+}
+
+.brands-list img {
+    height: 100px;
+    padding-top: 8px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 16px;
+}
+/*Esse é o efeito cascata no css: Para evitar construir um section container com todos os itens que foram estipulados logo a cima, modificando apenas o align-items para que fique no topo, foi utilizado apenas a sobreposição aqui, combinando o restante das modificações no conjunto a cima.*/
+section .container{
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px;
+    color: #7f4923;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+/*Para evitar que o usuário fique aumentando a área de tamanho e quebre os alinhamentos.*/
+form textarea {
+    resize: none;
+}
+/*Com o cursor pointer, nossos botões onde o mouse passa em cima, fazem uma mudança para indicar que é clicável*/
+form button {
+    background-color: #7f4923;
+    color: #ffe44d;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #c2743c;
+}
+/*Para editar área ao redor dos labels*/
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+footer {
+    background-color: #7f4923;
+    color: #ffe44d;
+    padding: 16px 0;
+}
