@@ -5,7 +5,7 @@
 }
 
 header h1 {
-    font-size: 42px;
+    font-size: 2.5em;
 }
 
 header,
@@ -29,6 +29,7 @@ body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 16px;
 }
 
 header, footer {
@@ -40,7 +41,6 @@ header, footer {
 header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 16px;
 }
 
 header nav li a {
@@ -64,8 +64,8 @@ section .container{
 
 
 .store-front {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
 }
 
 section .container{
@@ -79,17 +79,17 @@ section {
 }
 
 section h2 {
-    font-size: 36px;
-    margin-bottom: 32px;
+    font-size: 2em;
+    margin-bottom: 6px;
 }
 
-section p {
-    font-size: 28px;
-    margin-bottom: 8px;
+#about p {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
 }
 
 .store-front {
-    margin-right: 32px;
+    margin-right: 2em;
 }
 
 .social-links img {
@@ -186,8 +186,12 @@ input:focus, textarea:focus {
         max-width: 100%;
     }
 
+    section h2 {
+        margin-top: 1em;
+    }
+
     .destaque {
-        margin-bottom: 46px;
+        margin-bottom: 2em;
     }
     
     .destaque .destaque-products a{
@@ -201,10 +205,6 @@ input:focus, textarea:focus {
 
     .products {
         display: block;
-    }
-
-    .products .destaque-products {
-        margin-bottom: 32px;
     }
 
     header .container,
