@@ -25,6 +25,11 @@ section h3 {
     margin-bottom: 16px;
 }
 
+h2 {
+    border-bottom: 4px solid #9e6338;
+    padding-bottom: 8px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -61,7 +66,6 @@ section .container{
     align-items: center;
     justify-content: space-between;
 }
-
 
 .store-front {
     height: 500px;
@@ -152,83 +156,117 @@ input:focus, textarea:focus {
 }
 
 .destaque {
-    margin-bottom: 1em;
+    background-color: #f7e8aa;
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.destaque .destaque-products a{
-    display: flex;
+.destaque h2 {
     font-size: 2em;
+    margin-bottom: 16px;
 }
 
-.destaque .destaque-products img {
-    margin-right: 8px;
+.destaque-products {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destaque-products img {
+    max-width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.destaque-products h3 {
+    margin: 16px 0;
+    font-size: 1.5em;
+}
+
+.destaque-products p {
+    margin-bottom: 16px;
+    font-size: 1em;
+    color: #333;
+}
+
+.destaque-products button {
+    background-color: #ffe44d;
+    color: #333;
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.destaque-products button:hover {
+    background-color: #e6b800;
 }
 
 .products {
+    padding-top: 10px;
     display: grid;
     grid-template-columns: repeat(4, 24.25%);
     column-gap: 1%;
     row-gap: 5%;
 }
 
-
-footer {
-    
+.products h3 {
+    font-size: 1em;
 }
 
 @media screen and (max-width: 640px) {
     .conteudo {
         display: block;
     }
-
-    header .container{
-        display: block;
+    header .container, section .container, #contact .container, #about .container, footer .container {
+        flex-direction: column;
         max-width: 100%;
     }
-    .container {
-        max-width: 100%;
-    }
-
+    
     .destaque {
         margin-bottom: 1em;
     }
-    
-    .destaque .destaque-products a{
-        display: block;
+    .destaque h2 {
         font-size: 1.5em;
     }
-    
-
+    .destaque .destaque-products p {
+        display: block;
+        font-size: 1em;
+    }
     .products {
         display: block;
     }
-
-    .contact-methods { 
+    section h2 {
+        font-size: 1.5em;
+    }
+    .products h3 {
+        font-size: 1em;
+    }
+    .contact-methods {
         flex-direction: column;
-        align-items: center; 
-    } 
-
-    .contact-methods > div { 
+        align-items: center;
+    }
+    .contact-methods > div {
         width: 100%;
         padding-top: 1em;
-    }       
-
-    .store-front { 
+    }
+    .store-front {
         margin-bottom: 1.5em;
         height: 300px;
         width: 300px;
     }
-
-    #about .store-front{
+    #about .store-front {
         max-width: 100%;
     }
-
-    header .container,
-section .container, #contact .container, #about .container, footer .container {
-        flex-direction: column;
-        max-width: 100%;
+    #about p {
+        font-size: 1em;
     }
 }
+
 
 @media screen and (min-width: 641px) and (max-width: 1023px) {
     .conteudo {
@@ -242,14 +280,14 @@ section .container, #contact .container, #about .container, footer .container {
     }
 
     .store-front { 
-        width: 100%; /* Garante que a imagem ocupe toda a largura da coluna */
+        width: 100%;
     }
 
     #about-text {
         width: 100%;
     }
 
-    .destaque .destaque-products a{
+    .destaque .destaque-products p{
         font-size: 1.5em;
         display: block;
     }
